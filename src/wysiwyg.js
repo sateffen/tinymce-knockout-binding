@@ -46,6 +46,8 @@
 					tinymce.setContent( value );
 					tinymce.execCommand( 'keyup' );
 				}
+			} else {
+				$( element ).text( valueAccessor()() );
 			}
 		}
 
